@@ -129,87 +129,114 @@ nav .fa{
 }
 
 /* Index Body Styles*/
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #f8f9fa;
-}
-
-.login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.login-form {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 40px;
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
-    width: 320px; 
-}
-
-.login-form h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
+.indexbody1{
+    padding-top: 100px;
+    width: 80%;
+    margin:auto;
     text-align: center;
 }
 
-.form-group {
-    margin-bottom: 20px;
+h1{
+    font-size: 36px;
+    font-weight: 600;
 }
 
-.form-group label {
-    display: block;
+p{
+    color: #000;
     font-size: 16px;
-    color: #555;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
 }
 
-.form-group input {
-    width: 100%;
-    padding: 12px; 
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.login-btn {
+.indexcolumn{
+    flex-basis: 31%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 4%);    
+}
+h3{
+    text-align:center;
+    font-weight: 600;
+    margin: 10px;
+    transition: 0.65s;
+}
+
+.indexcolumn:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    transition: 0.65s;
+}
+
+
+/*Section 3 CSS */ 
+
+.section3{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.aboutcol{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.aboutcol img{
     width: 100%;
-    padding: 12px; 
-    background-color: #007bff;
+}
+.layer{
+    background: transparent;
+    height:100%;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.layer:hover{
+    background: rgba(226, 0, 0, 0.7);
+    transition: 0.5s;
+}
+
+.layer h3{
+    width: 100%;
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 24px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+    transition: 0.5s;
 }
 
-.login-btn:hover {
-    background-color: #0056b3;
+.login {
+    background:rgba(226, 0, 0, 0.7)
 }
 
-.links {
-    margin-top: 20px;
-}
 
-.links p {
-    font-size: 14px;
-    color: #888;
-}
 
-.links a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
 
-.links a:hover {
-    color: #0056b3;
-}
+
+
+
+
+
 
 
 
