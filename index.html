@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> NEA Online Auction Site - Abdullah Obeidat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Section 1: Front/Landing Page homescreen-->
+    <section class="header" href="style.css">
+        <nav>
+            <a href="index.html"><img src="Images/logowhitetransp.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Home">HOME</a></li>
+                    <li><a href="Auctions">AUCTIONS</a></li>
+                    <li><a href="About">ABOUT</a></li>
+                    <li><a href="FAQ">FAQ</a></li>
+                    <li><a href="login.html">ACCOUNT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+
+    <div class="text-box">
+        <h1>A world-class Auction Platform</h1>
+        <p>BidMENA is a world-class auction platform giving the public access to public listings in the Middle-East</p>
+        <a href="" class="hero-btn">Start Now!</a>
+    </div>
+    </section>
+<!--JavaScript for toggling menu bar on mobile--> 
+<script>
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+<!-- Section 2: Main Index Page-->
+<section class="indexbody1" href="style.css">
+   <h1> Welcome to BidMENA!</h1>     
+    <p>BidMENA Allows users to Bid on their favorite Classifieds across the MENA Region. With sophisticated technology, ease of access and smart-powered systems, BidMENA empowers you to satisfy all needs.</p>
+
+    <div class="row">
+        <div class="indexcolumn">
+            <h3>All Classifieds</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="indexcolumn">
+            <h3>Automotives</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="indexcolumn">
+            <h3>Electronics</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        
+    </div>
+
+
+</section>
+
+<!-- section 3: About BidMENA-->
+<section class="section3">
+<h1> About BIDMENA</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div class="row">
+    <div class="aboutcol">
+        <img src="Images/backgrounddxb.png">
+        <div class="layer">
+            <h3>Ease Of Access</h3>
+        </div>
+    </div>
+    <div class="aboutcol">
+        <img src="Images/backgrounddxb.png">
+        <div class="layer">
+            <h3>BidMENA's Company Profile</h3>
+        </div>
+    </div>
+    <div class="aboutcol">
+        <img src="Images/backgrounddxb.png">
+        <div class="layer">
+            <h3>Success in the MENA region</h3>
+        </div>
+    </div> 
+</div>
+
+
+
+</section>
+
+</body>
+</html>
+
