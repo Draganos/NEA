@@ -34,7 +34,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sqlappend = "INSERT INTO Users (Username, PasswordHash) VALUES ('$username', '$hashedPassword')";
         if ($connnectdatabase->query($sqlappend) === TRUE) {
             echo "New record created successfully";
-            
+            header("Location: signupsuccessful.html");
+            exit();
         } else {
             echo "Error: " . $sqlappend . "<br>" . $connnectdatabase->error;
         }
