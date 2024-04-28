@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="cssfiles/loginstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="login-container">
+    <div class="login-form">
+        <h2>Login</h2>
+        <form action="PHP/runauthentication.php" method="post">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="reenterpassword">Confirm Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+        <div class="links">
+            <p>Don't have an account? <a href="onboarding.html">Sign up now</a></p>
+            <p>Forgot password? <a href="support@NEAbidMENA.rf.gd">Recover your account</a></p>
+        </div>
+    </div>
+</section>
+</body>
+</html>

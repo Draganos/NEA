@@ -47,7 +47,6 @@ def receive_from_php(filename):
         password = received_text.read().strip()
         hashtable = Hashtable(100)  # Initialize hashtable with size 100
         hashtable.append_to_table("password", password)  # Example: key="password"
-        # You can perform additional operations on the hashtable here
         return password  # Return hashed password or other processed data
 
 if __name__ == "__main__":
